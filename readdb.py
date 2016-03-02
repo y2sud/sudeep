@@ -17,7 +17,7 @@ conn = MySQLdb.connect(host=DB_IP,    # your host, usually localhost
 #  you execute all the queries you need
 cur = conn.cursor()
 
-# Use all the SQL you like
+# SQL
 cur.execute("SELECT * FROM soccer")
 
 
