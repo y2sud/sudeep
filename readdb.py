@@ -13,7 +13,7 @@ DB_IP2 = os.environ.get('MYSQL_SERVICE_HOST','127.0.0.1')
 DB_PORT = int(os.environ.get('EXTERNAL_MYSQL_SERVICE_SERVICE_PORT',3306))
 DB_USER = os.environ.get('MYSQL_USER','sudeep')
 DB_PWD = os.environ.get('MYSQL_PASSWORD','Hello_AWS')
-DB_NAME = os.environ.get('MYSQL_DATABASE','Hello_AWS')
+DB_NAME = os.environ.get('MYSQL_DATABASE','???')
 
 print 'db_ip ' + DB_IP
 print 'db_ip2 ' + DB_IP2
