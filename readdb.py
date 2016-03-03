@@ -1,4 +1,5 @@
 #!/usr/bin/python
+'''
 import MySQLdb
 import os
 
@@ -25,3 +26,6 @@ for row in cur.fetchall():
     print row
 
 db.close()
+'''
+
+print 'hello world'
