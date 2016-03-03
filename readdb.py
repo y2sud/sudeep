@@ -2,7 +2,7 @@
 
 print 'hello 1'
 
-import MySQLdb
+#import MySQLdb
 import os
 
 print 'hello 2'
