@@ -1,7 +1,11 @@
 #!/usr/bin/python
-'''
+
+print 'hello 1'
+
 import MySQLdb
 import os
+
+print 'hello 2'
 
 DB_IP = os.environ.get('OPENSHIFT_MYSQL_DB_HOST','127.0.0.1')
 DB_PORT = int(os.environ.get('OPENSHIFT_MYSQL_DB_PORT',3306))
@@ -26,6 +30,4 @@ for row in cur.fetchall():
     print row
 
 db.close()
-'''
 
-print 'hello world'
