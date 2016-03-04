@@ -12,7 +12,11 @@ echo "db " . $dbname;
 echo "dbuser " . $dbuser;
 echo "dbpwd " . $dbpwd;
 //echo 'host ' . $dbhost
-/*
+
+$dbuser = 'baadal_sql';
+$dbpwd = 'merasql';
+$dbname = 'db01';
+
 $connection = mysqli_connect($dbhost.":".$dbport, $dbuser, $dbpwd, $dbname) or die("Error " . mysqli_error($connection));
 
 $query = "SELECT * from soccer" or die("Error in the consult.." . mysqli_error($connection));
@@ -26,5 +30,5 @@ while ($row = mysqli_fetch_assoc($rs)) {
 echo "End of the list <br>";
 mysqli_close($connection);
 
-*/
+
 ?>
