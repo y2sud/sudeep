@@ -27,7 +27,7 @@ $rs = $connection->query($query) or die("Error in rs.." . mysqli_error($connecti
 
 
 while ($row = mysqli_fetch_assoc($rs)) {
-    echo "Player: ".$row['name'] . "Club: " . $row['club'] . "<br>";
+    echo "Player: ".$row['player'] . " Club: " . $row['club'] . "<br>";
 }
 echo "End of the list <br>";
 
