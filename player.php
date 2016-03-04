@@ -5,10 +5,13 @@ $dbuser = getenv("DATABASE_USER");
 $dbname = getenv("DATABASE_NAME");
 $dbpwd = getenv("DATABASE_PASSWORD");
 
-echo 'host ' . $dbhost;
-echo 'db ' . $dbname;
+echo "host " . $dbhost;
+echo "port " . $dbport;
+echo "db " . $dbname;
+echo "dbuser " . $dbuser;
+echo "dbpwd " . $dbpwd;
 //echo 'host ' . $dbhost
-
+/*
 $connection = mysqli_connect($dbhost.":".$dbport, $dbuser, $dbpwd, $dbname) or die("Error " . mysqli_error($connection));
 
 $query = "SELECT * from soccer" or die("Error in the consult.." . mysqli_error($connection));
@@ -21,4 +24,6 @@ while ($row = mysqli_fetch_assoc($rs)) {
 }
 echo "End of the list <br>";
 mysqli_close($connection);
+
+*/
 ?>
