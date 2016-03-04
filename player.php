@@ -24,6 +24,7 @@ $query = "SELECT * from soccer" or die("Error in the consult.." . mysqli_error($
 echo "List of footballers: <br>";
 
 $rs = $connection->query($query);
+echo 'res ' . $rs;
 /*
 while ($row = mysqli_fetch_assoc($rs)) {
     echo "Player: ".$row['name'] . "Club: " . $row['club'] . "<br>";
