@@ -5,8 +5,8 @@ $dbuser = getenv("DATABASE_USER");
 $dbname = getenv("DATABASE_NAME");
 $dbpwd = getenv("DATABASE_PASSWORD");
 
-echo 'host ' . $dbhost
-echo 'db ' . $dbname
+echo 'host ' . $dbhost;
+echo 'db ' . $dbname;
 //echo 'host ' . $dbhost
 
 $connection = mysqli_connect($dbhost.":".$dbport, $dbuser, $dbpwd, $dbname) or die("Error " . mysqli_error($connection));
