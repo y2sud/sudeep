@@ -22,6 +22,7 @@ $connection = mysqli_connect($dbhost.":".$dbport, $dbuser, $dbpwd, $dbname) or d
 $query = "SELECT * from soccer" or die("Error in the consult.." . mysqli_error($connection));
 
 echo "List of footballers: <br>";
+echo "connection: " . $connection . "<br>";
 
 $rs = $connection->query($query);
 echo 'res ' . $rs;
