@@ -6,11 +6,6 @@ $dbuser = getenv("MYSQL_USER");
 $dbname = getenv("MYSQL_DATABASE");
 $dbpwd = getenv("MYSQL_PASSWORD");
 
-echo "host " . $dbhost;
-echo "port " . $dbport;
-echo "db " . $dbname;
-echo "dbuser " . $dbuser;
-echo "dbpwd " . $dbpwd;
 //echo 'host ' . $dbhost
 
 $dbuser = 'baadal_sql';
