@@ -15,6 +15,10 @@ DB_USER = os.environ.get('MYSQL_SERVICE_USER','?')
 DB_PWD = os.environ.get('MYSQL_PASSWORD','??')
 DB_NAME = os.environ.get('MYSQL_SERVICE_DATABASE','???')
 
+DB_NAME = 'db01'
+DB_USER = 'baadal_sql'
+DB_PWD = 'merasql'
+
 print 'db_ip ' + DB_IP
 print 'db_ip2 ' + DB_IP2
 print 'db_name ' + DB_NAME
@@ -22,7 +26,7 @@ print 'db_user ' + DB_USER
 
 import MySQLdb
 #import MySQL-python
-conn = MySQLdb.connect(host=DB_IP,    # your host, usually localhost
+conn = MySQLdb.connect(host=DB_IP2,    # your host, usually localhost
 			port=DB_PORT,
                      user=DB_USER,         # your username
                      passwd=DB_PWD,  # your password
