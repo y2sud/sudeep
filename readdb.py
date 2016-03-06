@@ -43,5 +43,5 @@ cur.execute("SELECT * FROM soccer")
 for row in cur.fetchall():
     print row
 
-db.close()
+conn.close()
 
