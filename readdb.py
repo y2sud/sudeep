@@ -20,8 +20,8 @@ print 'db_ip2 ' + DB_IP2
 print 'db_name ' + DB_NAME
 print 'db_user ' + DB_USER
 
-#import MySQLdb
-import MySQL-python
+import MySQLdb
+#import MySQL-python
 conn = MySQLdb.connect(host=DB_IP,    # your host, usually localhost
 			port=DB_PORT,
                      user=DB_USER,         # your username
