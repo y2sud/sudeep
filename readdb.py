@@ -27,7 +27,7 @@ print 'db_user ' + DB_USER
 import MySQLdb
 #import MySQL-python
 
-@app.route('/')
+
 def test():
 	conn = MySQLdb.connect(host=DB_IP2,    # your host, usually localhost
 				port=DB_PORT,
@@ -49,3 +49,6 @@ def test():
 	conn.close()
 	print 'close'
 	return row
+
+if __name__ == '__main__':
+	test()
