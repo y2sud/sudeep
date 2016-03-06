@@ -26,22 +26,26 @@ print 'db_user ' + DB_USER
 
 import MySQLdb
 #import MySQL-python
-conn = MySQLdb.connect(host=DB_IP2,    # your host, usually localhost
-			port=DB_PORT,
-                     user=DB_USER,         # your username
-                     passwd=DB_PWD,  # your password
-                     db=DB_NAME)        # name of the data base
 
-# you must create a Cursor object. It will let
-#  you execute all the queries you need
-cur = conn.cursor()
-
-# SQL select
-cur.execute("SELECT * FROM soccer")
-
-
-for row in cur.fetchall():
-    print row
-
-conn.close()
-print 'close'
+@app.route('/')
+def test():
+	conn = MySQLdb.connect(host=DB_IP2,    # your host, usually localhost
+				port=DB_PORT,
+	                     user=DB_USER,         # your username
+	                     passwd=DB_PWD,  # your password
+	                     db=DB_NAME)        # name of the data base
+	
+	# you must create a Cursor object. It will let
+	#  you execute all the queries you need
+	cur = conn.cursor()
+	
+	# SQL select
+	cur.execute("SELECT * FROM soccer")
+	
+	
+	for row in cur.fetchall():
+	    print row
+	
+	conn.close()
+	print 'close'
+	return row
